@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">org.h2.Driver</property>
+        <property name="connection.url">jdbc:h2:./database/dantistApp</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+        <property name="dialect">org.hibernate.dialect.H2Dialect</property>
+
+        <property name="connection.pool_size">1</property>
+        <property name="show_sql">true</property>
+        <mapping class ="model.Doctor"></mapping>
+        <mapping class ="model.Channels"></mapping>
+        <mapping class ="model.Dent"></mapping>
+        <mapping class ="model.Desease"></mapping>
+        <mapping class ="model.DeseaseHistory"></mapping>
+        <mapping class ="model.Material"></mapping>
+        <mapping class ="model.Patient"></mapping>
+        <mapping class ="model.Seal"></mapping>
+        <mapping class ="model.Services"></mapping>
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="549.0" prefWidth="1071.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.NewMailMessageController">
+   <children>
+      <ToolBar prefHeight="76.0" prefWidth="1366.0">
+         <items>
+            <Label text="От кого:" />
+            <TextField fx:id="SentFrom" />
+            <Label text="Кому:" />
+            <TextField fx:id="SentTo" />
+            <Button fx:id="Sent" minHeight="-Infinity" mnemonicParsing="false" text="Послать" />
+            <Button fx:id="addFIle" mnemonicParsing="false" text="Прикрепить файл" />
+         </items>
+      </ToolBar>
+      <TextArea fx:id="message" layoutX="7.0" layoutY="84.0" prefHeight="682.0" prefWidth="1355.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="934.0" style="-fx-background-color: CCFFCi;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.MainWindowController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="934.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Сервис">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Инструменты">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu fx:id="settings" mnemonicParsing="false" text="Настройки">
+              <items>
+                <MenuItem fx:id="camSettings" mnemonicParsing="false" text="Камера" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane layoutY="25.0" prefHeight="548.0" prefWidth="219.0">
+         <items>
+            <AnchorPane prefHeight="546.0" prefWidth="297.0">
+               <children>
+                  <Button fx:id="schedule" mnemonicParsing="false" prefHeight="51.0" prefWidth="204.0" text="Расписание" />
+                  <Button fx:id="patients" layoutY="51.0" mnemonicParsing="false" onMousePressed="#loadPane" prefHeight="51.0" prefWidth="204.0" text="Пациенты" />
+                  <Button fx:id="email" layoutY="102.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="204.0" text="Почта" />
+                  <Button fx:id="chat" layoutY="153.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="204.0" text="Чат" />
+                  <Button layoutY="204.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="204.0" text="X-Ray" fx:id="xray" />
+                  <Button fx:id="UsbCam" layoutY="255.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="204.0" text="USB камера" />
+                  <Button fx:id="cassa" layoutY="306.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="204.0" text="Касса" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <AnchorPane layoutX="212.0" layoutY="25.0" prefHeight="746.0" prefWidth="1155.0">
+         <children>
+            <VBox layoutX="14.0" layoutY="14.0" prefHeight="430.0" prefWidth="662.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
